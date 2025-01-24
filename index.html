@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shraddha Optics</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff6f61; /* Light orangish-red */
+            color: #fff;
+            text-align: center;
+            padding: 20px 10px;
+            border-bottom: 4px solid #ffd6d1;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 20px 15px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #ff6f61;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        section p {
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        section a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #ff6f61;
+            display: block;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            transition: background 0.3s ease;
+            width: 100%;
+            max-width: 250px;
+            margin: 0 auto;
+        }
+
+        section a:hover {
+            background-color: #e05d51;
+        }
+
+        /* Icon Section */
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .icon-container a {
+            color: #ff6f61;
+            font-size: 1.8rem;
+            transition: color 0.3s ease;
+        }
+
+        .icon-container a:hover {
+            color: #e05d51;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-container button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 0.9rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            display: inline-block;
+            width: auto;
+        }
+
+        .contact-container button:hover {
+            background-color: #e05d51;
+        }
+
+        .contact-container p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        footer {
+            background-color: #ff6f61;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            section h2 {
+                font-size: 1.4rem;
+            }
+
+            section p {
+                font-size: 0.9rem;
+            }
+
+            .contact-container button {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+    <script>
+        function copyToClipboard() {
+            navigator.clipboard.writeText('+919876543210').then(() => {
+                alert('Phone number copied to clipboard!');
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Shraddha Optics</h1>
+        <p>Computerized Eye Testing and Contact Lense Clinic.</p>
+    </header>
+
+    <!-- Address Section -->
+    <section>
+        <h2>Visit Us</h2>
+        <div class="address-container">
+            <p><strong>Address:</strong></p>
+            <p>OM Sai Palace, Beside UCO Bank, Ramdev Park, Mira-Bhayander</p>
+            <a href="https://g.co/kgs/gdj6Fij" target="_blank">Get Directions on Google Maps</a>
+        </div>
+    </section>
+
+    <!-- Google Business Section -->
+    <section>
+        <h2>Explore Our Google Profile</h2>
+        <p>Check our reviews, ratings, and more on our Google Business Profile.</p>
+        <a href="https://g.co/kgs/gdj6Fij" target="_blank">Google Business Profile</a>
+    </section>
+
+    <!-- Instagram Section -->
+    <section>
+        <h2>Follow Us on Instagram</h2>
+        <p>Discover the latest collections, offers, and updates from Shraddha Optics.</p>
+        <a href="https://instagram.com/shraddha_optics" target="_blank">Visit Our Instagram</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <p>Call us at: +91 98765 43210</p>
+            <button onclick="window.location.href='tel:+919876543210'">Call Now</button>
+            <button onclick="copyToClipboard()">Copy Number</button>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Shraddha Optics | All Rights Reserved
+    </footer>
+</body>
+
+</html>
